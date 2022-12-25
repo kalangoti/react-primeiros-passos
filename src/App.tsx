@@ -35,7 +35,7 @@ function App() {
 
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="search">GitHub user</label>
+          <label htmlFor="search">Type your GitHub user</label>
           <div className="input-group">
             <input id="search" type="text" className="form-control" required value={search} onChange={handleChange} />
 
@@ -56,6 +56,7 @@ function App() {
             <img src={userData?.avatar_url} alt="GitHub-Mark" className="responsive rounded-circle" height="200px" />
 
             <h1 className="pt-2">
+              GitHub:{" "}
               <a href={userData?.html_url} target="_blank">
                 {userData?.name}
               </a>
